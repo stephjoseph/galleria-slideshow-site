@@ -1,26 +1,42 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer base {
+  .font-display {
+    @apply font-['Libre_Baskerville'] text-[12.5rem] font-bold leading-[9.375rem] tracking-normal;
   }
-  body {
-    color: white;
-    background: black;
+
+  .font-h1 {
+    @apply font-['Libre_Baskerville'] text-[3.5rem] font-bold leading-[4rem] tracking-normal;
+  }
+
+  .font-h2 {
+    @apply font-['Libre_Baskerville'] text-[1.5rem] font-bold leading-[1.813rem] tracking-normal;
+  }
+
+  .font-h3 {
+    @apply font-['Libre_Baskerville'] text-[1.125rem] font-bold leading-[1.375rem] tracking-normal;
+  }
+
+  .font-subhead-1 {
+    @apply font-['Libre_Baskerville'] text-[0.938rem] font-normal leading-[1.188rem] tracking-normal;
+  }
+
+  .font-subhead-2 {
+    @apply font-['Libre_Baskerville'] text-[0.813rem] font-bold leading-[1.063rem] tracking-normal;
+  }
+
+  .font-link-1 {
+    @apply font-['Libre_Baskerville'] text-[0.75rem] font-bold leading-[0.938rem] tracking-[2.5px];
+  }
+
+  .font-link-2 {
+    @apply font-['Libre_Baskerville'] text-[0.563rem] font-bold leading-[0.688rem] tracking-[2px];
+  }
+
+  .font-body {
+    @apply font-['Libre_Baskerville'] text-[0.875rem] font-bold leading-[1.75rem] tracking-normal;
   }
 }
