@@ -29,7 +29,7 @@
   }
 
   .font-link-1 {
-    @apply font-['Libre_Baskerville'] text-[0.75rem] font-bold leading-[0.938rem] tracking-[2.5px];
+    @apply font-['Libre_Baskerville'] text-[0.75rem] font-bold uppercase leading-[0.938rem] tracking-[2.5px];
   }
 
   .font-link-2 {
