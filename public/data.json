@@ -15,7 +15,8 @@
         "large": "/assets/starry-night/hero-large.jpg"
       },
       "gallery": "/assets/starry-night/gallery.jpg"
-    }
+    },
+    "slug": "starry-night"
   },
   {
     "name": "Girl with a Pearl Earring",
@@ -33,7 +34,8 @@
         "large": "/assets/girl-with-pearl-earring/hero-large.jpg"
       },
       "gallery": "/assets/girl-with-pearl-earring/gallery.jpg"
-    }
+    },
+    "slug": "girl-with-a-pearl-earring"
   },
   {
     "name": "Guernica",
@@ -51,7 +53,8 @@
         "large": "/assets/guernica/hero-large.jpg"
       },
       "gallery": "/assets/guernica/gallery.jpg"
-    }
+    },
+    "slug": "guernica"
   },
   {
     "name": "Penitent Magdalene",
@@ -69,7 +72,8 @@
         "large": "/assets/penitent-magdalene/hero-large.jpg"
       },
       "gallery": "/assets/penitent-magdalene/gallery.jpg"
-    }
+    },
+    "slug": "penitent-magdalene"
   },
   {
     "name": "The Storm on the Sea of Galilee",
@@ -87,7 +91,8 @@
         "large": "/assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
       },
       "gallery": "/assets/the-storm-on-the-sea-of-galilee/gallery.jpg"
-    }
+    },
+    "slug": "the-storm-on-the-sea-of-galilee"
   },
   {
     "name": "The Great Wave off Kanagawa",
@@ -105,10 +110,11 @@
         "large": "/assets/the-great-wave-off-kanagawa/hero-large.jpg"
       },
       "gallery": "/assets/the-great-wave-off-kanagawa/gallery.jpg"
-    }
+    },
+    "slug": "the-great-wave-off-kanagawa"
   },
   {
-    "name": "Van Gogh Self-portrait",
+    "name": "Van Gogh self-portrait",
     "year": 1889,
     "description": "This self-portrait was one of about 32 produced over a 10-year period, and these were an important part of his work as a painter; he painted himself because he often lacked the money to pay for models. He took the painting with him to Auvers-sur-Oise, near Paris, where he showed it to Dr. Paul Gachet, who thought it was \"absolutely fanatical\". Art historians are divided as to whether this painting or Self-portrait without beard is Van Gogh's final self-portrait. The art historians Ingo F. Walther and Jan Hulsker consider this to be the last.",
     "source": "https://en.wikipedia.org/wiki/Van_Gogh_self-portrait_(1889)",
@@ -123,7 +129,8 @@
         "large": "/assets/van-gogh-self-portrait/hero-large.jpg"
       },
       "gallery": "/assets/van-gogh-self-portrait/gallery.jpg"
-    }
+    },
+    "slug": "van-gogh-self-portrait"
   },
   {
     "name": "The Sleeping Gypsy",
@@ -141,7 +148,8 @@
         "large": "/assets/the-sleeping-gypsy/hero-large.jpg"
       },
       "gallery": "/assets/the-sleeping-gypsy/gallery.jpg"
-    }
+    },
+    "slug": "the-sleeping-gypsy"
   },
   {
     "name": "Lady with an Ermine",
@@ -159,7 +167,8 @@
         "large": "/assets/lady-with-an-ermine/hero-large.jpg"
       },
       "gallery": "/assets/lady-with-an-ermine/gallery.jpg"
-    }
+    },
+    "slug": "lady-with-an-ermine"
   },
   {
     "name": "The Night Café",
@@ -177,7 +186,8 @@
         "large": "/assets/the-night-cafe/hero-large.jpg"
       },
       "gallery": "/assets/the-night-cafe/gallery.jpg"
-    }
+    },
+    "slug": "the-night-cafe"
   },
   {
     "name": "The Basket of Apples",
@@ -195,7 +205,8 @@
         "large": "/assets/the-basket-of-apples/hero-large.jpg"
       },
       "gallery": "/assets/the-basket-of-apples/gallery.jpg"
-    }
+    },
+    "slug": "the-basket-of-apples"
   },
   {
     "name": "The Boy in the Red Vest",
@@ -213,7 +224,8 @@
         "large": "/assets/the-boy-in-the-red-vest/hero-large.jpg"
       },
       "gallery": "/assets/the-boy-in-the-red-vest/gallery.jpg"
-    }
+    },
+    "slug": "the-boy-in-the-red-vest"
   },
   {
     "name": "Arnolfini Portrait",
@@ -231,7 +243,8 @@
         "large": "/assets/arnolfini-portrait/hero-large.jpg"
       },
       "gallery": "/assets/arnolfini-portrait/gallery.jpg"
-    }
+    },
+    "slug": "arnolfini-portrait"
   },
   {
     "name": "Mona Lisa",
@@ -249,7 +262,8 @@
         "large": "/assets/mona-lisa/hero-large.jpg"
       },
       "gallery": "/assets/mona-lisa/gallery.jpg"
-    }
+    },
+    "slug": "mona-lisa"
   },
   {
     "name": "The Swing",
@@ -267,6 +281,7 @@
         "large": "/assets/the-swing/hero-large.jpg"
       },
       "gallery": "/assets/the-swing/gallery.jpg"
-    }
+    },
+    "slug": "the-swing"
   }
 ]

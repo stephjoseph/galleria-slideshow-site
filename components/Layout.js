@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
           href='/assets/favicon-32x32.png'
         />
       </Head>
-      <div className='mx-auto grid w-full max-w-[1920px] place-items-center'>
+      <div className='mx-auto grid w-full max-w-[1920px] place-items-center bg-white'>
         <Nav />
         {children}
       </div>

@@ -13,7 +13,7 @@
   }
 
   .font-h2 {
-    @apply font-['Libre_Baskerville'] text-[1.5rem] font-bold leading-[1.813rem] tracking-normal;
+    @apply font-['Libre_Baskerville'] text-[1.5rem] font-bold leading-[1.875rem] tracking-normal;
   }
 
   .font-h3 {
@@ -25,18 +25,22 @@
   }
 
   .font-subhead-2 {
-    @apply font-['Libre_Baskerville'] text-[0.813rem] font-bold leading-[1.063rem] tracking-normal;
+    @apply font-['Libre_Baskerville'] text-[0.813rem] font-bold leading-[1rem] tracking-normal;
   }
 
   .font-link-1 {
-    @apply font-['Libre_Baskerville'] text-[0.75rem] font-bold uppercase leading-[0.938rem] tracking-[2.5px];
+    @apply font-['Libre_Baskerville'] text-[0.75rem] font-bold uppercase leading-[0.938rem] tracking-[2.5px] hover:text-black active:text-black;
   }
 
   .font-link-2 {
-    @apply font-['Libre_Baskerville'] text-[0.563rem] font-bold leading-[0.688rem] tracking-[2px];
+    @apply font-['Libre_Baskerville'] text-[0.563rem] font-bold uppercase leading-[0.688rem] tracking-[2px] underline hover:text-black active:text-black;
   }
 
   .font-body {
     @apply font-['Libre_Baskerville'] text-[0.875rem] font-bold leading-[1.75rem] tracking-normal;
+  }
+
+  .btn {
+    @apply flex h-10 w-[9.5rem] items-center justify-center gap-[0.875rem] bg-black/75 font-['Libre_Baskerville'] text-[0.625rem]  font-bold uppercase leading-[0.75rem] tracking-[2.14px] text-white hover:bg-white/25 active:bg-white/25;
   }
 }
