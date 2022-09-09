@@ -43,4 +43,70 @@
   .btn {
     @apply flex h-10 w-[9.5rem] items-center justify-center gap-[0.875rem] bg-black/75 font-['Libre_Baskerville'] text-[0.625rem]  font-bold uppercase leading-[0.75rem] tracking-[2.14px] text-white hover:bg-white/25 active:bg-white/25;
   }
+
+  @media (min-width: 768px) {
+    .mosaic {
+      grid-template-rows: 8.87% 3.9% 4.79% 2.66% 7.99% 0.53% 8.87% 5.5% 2.3% 11.17% 2.66% 5.14% 5.14% 12.06%;
+    }
+
+    .mosaic a:nth-child(1) {
+      grid-row: span 1;
+    }
+
+    .mosaic a:nth-child(2) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(3) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(4) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(5) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(6) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(7) {
+      grid-row: span 3;
+    }
+
+    .mosaic a:nth-child(8) {
+      grid-row: span 1;
+    }
+
+    .mosaic a:nth-child(9) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(10) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(11) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(12) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(13) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(14) {
+      grid-row: span 2;
+    }
+
+    .mosaic a:nth-child(15) {
+      grid-row: span 1;
+    }
+  }
 }
