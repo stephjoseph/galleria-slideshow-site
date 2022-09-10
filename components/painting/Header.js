@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from './Modal';
 
 const Header = ({ painting }) => {
@@ -8,6 +8,12 @@ const Header = ({ painting }) => {
   const toggleModal = () => {
     setModalActive((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    modalActive
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'visible');
+  }, [modalActive]);
 
   return (
     <>
