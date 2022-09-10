@@ -9,7 +9,10 @@
       "name": "Vincent Van Gogh"
     },
     "images": {
-      "thumbnail": "/assets/starry-night/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/starry-night/thumbnail.jpg",
+        "height": 250
+      },
       "hero": {
         "small": "/assets/starry-night/hero-small.jpg",
         "large": "/assets/starry-night/hero-large.jpg"
@@ -28,7 +31,10 @@
       "name": "Johannes Vermeer"
     },
     "images": {
-      "thumbnail": "/assets/girl-with-pearl-earring/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/girl-with-pearl-earring/thumbnail.jpg",
+        "height": 400
+      },
       "hero": {
         "small": "/assets/girl-with-pearl-earring/hero-small.jpg",
         "large": "/assets/girl-with-pearl-earring/hero-large.jpg"
@@ -47,7 +53,10 @@
       "name": "Pablo Picasso"
     },
     "images": {
-      "thumbnail": "/assets/guernica/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/guernica/thumbnail.jpg",
+        "height": 285
+      },
       "hero": {
         "small": "/assets/guernica/hero-small.jpg",
         "large": "/assets/guernica/hero-large.jpg"
@@ -66,7 +75,10 @@
       "name": "Artemisia Gentileschi"
     },
     "images": {
-      "thumbnail": "/assets/penitent-magdalene/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/penitent-magdalene/thumbnail.jpg",
+        "height": 250
+      },
       "hero": {
         "small": "/assets/penitent-magdalene/hero-small.jpg",
         "large": "/assets/penitent-magdalene/hero-large.jpg"
@@ -85,7 +97,10 @@
       "name": "Rembrandt"
     },
     "images": {
-      "thumbnail": "/assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg",
+        "height": 340
+      },
       "hero": {
         "small": "/assets/the-storm-on-the-sea-of-galilee/hero-small.jpg",
         "large": "/assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
@@ -104,7 +119,10 @@
       "name": "Hokusai"
     },
     "images": {
-      "thumbnail": "/assets/the-great-wave-off-kanagawa/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/the-great-wave-off-kanagawa/thumbnail.jpg",
+        "height": 280
+      },
       "hero": {
         "small": "/assets/the-great-wave-off-kanagawa/hero-small.jpg",
         "large": "/assets/the-great-wave-off-kanagawa/hero-large.jpg"
@@ -123,7 +141,10 @@
       "name": "Vincent Van Gogh"
     },
     "images": {
-      "thumbnail": "/assets/van-gogh-self-portrait/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/van-gogh-self-portrait/thumbnail.jpg",
+        "height": 500
+      },
       "hero": {
         "small": "/assets/van-gogh-self-portrait/hero-small.jpg",
         "large": "/assets/van-gogh-self-portrait/hero-large.jpg"
@@ -142,7 +163,10 @@
       "name": "Henri Rousseau"
     },
     "images": {
-      "thumbnail": "/assets/the-sleeping-gypsy/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/the-sleeping-gypsy/thumbnail.jpg",
+        "height": 250
+      },
       "hero": {
         "small": "/assets/the-sleeping-gypsy/hero-small.jpg",
         "large": "/assets/the-sleeping-gypsy/hero-large.jpg"
@@ -150,25 +174,6 @@
       "gallery": "/assets/the-sleeping-gypsy/gallery.jpg"
     },
     "slug": "the-sleeping-gypsy"
-  },
-  {
-    "name": "The Night Café",
-    "year": 1888,
-    "description": "The Night Café (French: Le Café de nuit) is an oil painting created by Dutch artist Vincent van Gogh in September 1888 in Arles. Its title is inscribed lower right beneath the signature. The painting is owned by Yale University and is currently held at the Yale University Art Gallery in New Haven, Connecticut. The interior depicted is the Café de la Gare, 30 Place Lamartine, run by Joseph-Michel Ginoux and his wife Marie, who in November 1888 posed for Van Gogh's and Gauguin's Arlésienne; a bit later, Joseph Ginoux evidently posed for both artists, too.",
-    "source": "https://en.wikipedia.org/wiki/The_Night_Caf%C3%A9",
-    "artist": {
-      "image": "/assets/the-night-cafe/artist.jpg",
-      "name": "Vincent Van Gogh"
-    },
-    "images": {
-      "thumbnail": "/assets/the-night-cafe/thumbnail.jpg",
-      "hero": {
-        "small": "/assets/the-night-cafe/hero-small.jpg",
-        "large": "/assets/the-night-cafe/hero-large.jpg"
-      },
-      "gallery": "/assets/the-night-cafe/gallery.jpg"
-    },
-    "slug": "the-night-cafe"
   },
   {
     "name": "Lady with an Ermine",
@@ -180,7 +185,10 @@
       "name": "Leonardo da Vinci"
     },
     "images": {
-      "thumbnail": "/assets/lady-with-an-ermine/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/lady-with-an-ermine/thumbnail.jpg",
+        "height": 420
+      },
       "hero": {
         "small": "/assets/lady-with-an-ermine/hero-small.jpg",
         "large": "/assets/lady-with-an-ermine/hero-large.jpg"
@@ -188,6 +196,28 @@
       "gallery": "/assets/lady-with-an-ermine/gallery.jpg"
     },
     "slug": "lady-with-an-ermine"
+  },
+  {
+    "name": "The Night Café",
+    "year": 1888,
+    "description": "The Night Café (French: Le Café de nuit) is an oil painting created by Dutch artist Vincent van Gogh in September 1888 in Arles. Its title is inscribed lower right beneath the signature. The painting is owned by Yale University and is currently held at the Yale University Art Gallery in New Haven, Connecticut. The interior depicted is the Café de la Gare, 30 Place Lamartine, run by Joseph-Michel Ginoux and his wife Marie, who in November 1888 posed for Van Gogh's and Gauguin's Arlésienne; a bit later, Joseph Ginoux evidently posed for both artists, too.",
+    "source": "https://en.wikipedia.org/wiki/The_Night_Caf%C3%A9",
+    "artist": {
+      "image": "/assets/the-night-cafe/artist.jpg",
+      "name": "Vincent Van Gogh"
+    },
+    "images": {
+      "thumbnail": {
+        "src": "/assets/the-night-cafe/thumbnail.jpg",
+        "height": 260
+      },
+      "hero": {
+        "small": "/assets/the-night-cafe/hero-small.jpg",
+        "large": "/assets/the-night-cafe/hero-large.jpg"
+      },
+      "gallery": "/assets/the-night-cafe/gallery.jpg"
+    },
+    "slug": "the-night-cafe"
   },
   {
     "name": "The Basket of Apples",
@@ -199,7 +229,10 @@
       "name": "Paul Cézanne"
     },
     "images": {
-      "thumbnail": "/assets/the-basket-of-apples/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/the-basket-of-apples/thumbnail.jpg",
+        "height": 430
+      },
       "hero": {
         "small": "/assets/the-basket-of-apples/hero-small.jpg",
         "large": "/assets/the-basket-of-apples/hero-large.jpg"
@@ -218,7 +251,10 @@
       "name": "Paul Cézanne"
     },
     "images": {
-      "thumbnail": "/assets/the-boy-in-the-red-vest/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/the-boy-in-the-red-vest/thumbnail.jpg",
+        "height": 260
+      },
       "hero": {
         "small": "/assets/the-boy-in-the-red-vest/hero-small.jpg",
         "large": "/assets/the-boy-in-the-red-vest/hero-large.jpg"
@@ -237,7 +273,10 @@
       "name": "Jan van Eyck"
     },
     "images": {
-      "thumbnail": "/assets/arnolfini-portrait/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/arnolfini-portrait/thumbnail.jpg",
+        "height": 330
+      },
       "hero": {
         "small": "/assets/arnolfini-portrait/hero-small.jpg",
         "large": "/assets/arnolfini-portrait/hero-large.jpg"
@@ -256,7 +295,10 @@
       "name": "Leonardo da Vinci"
     },
     "images": {
-      "thumbnail": "/assets/mona-lisa/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/mona-lisa/thumbnail.jpg",
+        "height": 525
+      },
       "hero": {
         "small": "/assets/mona-lisa/hero-small.jpg",
         "large": "/assets/mona-lisa/hero-large.jpg"
@@ -275,7 +317,10 @@
       "name": "Jean-Honoré Fragonard"
     },
     "images": {
-      "thumbnail": "/assets/the-swing/thumbnail.jpg",
+      "thumbnail": {
+        "src": "/assets/the-swing/thumbnail.jpg",
+        "height": 340
+      },
       "hero": {
         "small": "/assets/the-swing/hero-small.jpg",
         "large": "/assets/the-swing/hero-large.jpg"

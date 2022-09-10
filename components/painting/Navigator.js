@@ -25,7 +25,7 @@ const Navigator = ({ gallery, painting }) => {
           className='h-px bg-black'
         ></div>
       </div>
-      <div className='flex w-[87.2%] items-center justify-between md:w-[89.71%]'>
+      <div className='flex w-[87.2%] items-center justify-between md:w-[89.71%] xl:w-[94.44%]'>
         <div className='flex flex-col gap-[0.563rem]'>
           <div className='font-body leading-[1.063rem] md:text-[1.125rem] md:leading-[1.375rem]'>
             {gallery[paintingIndex].name}
