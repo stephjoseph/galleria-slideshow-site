@@ -1,8 +1,12 @@
-const Modal = ({ painting, toggleModal }) => {
+const Modal = ({ painting, modalActive, toggleModal }) => {
   return (
     <div
       onClick={() => toggleModal()}
-      className='fixed top-0 z-50 flex h-screen w-full flex-col items-center justify-center overflow-y-auto bg-black/[0.8539] md:justify-start md:py-32 xl:max-h-[1024px]'
+      className={`${
+        !modalActive
+          ? 'pointer-events-none opacity-0'
+          : 'opacity-1 pointer-events-auto'
+      } modal fixed top-0 z-50 flex h-screen w-full flex-col items-center justify-center overflow-y-auto bg-black/[0.8539] transition-[opacity] duration-300 ease-in md:justify-start md:py-32 xl:max-h-[1024px]`}
     >
       <div
         className='flex w-[87.2%] flex-col items-end gap-8 md:w-max md:max-w-[87.24%] md:gap-10 xl:max-w-[63.68%]'

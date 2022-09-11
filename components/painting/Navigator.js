@@ -15,7 +15,7 @@ const Navigator = ({ gallery, paintingIndex }) => {
   }, [paintingIndex]);
 
   return (
-    <div className='sticky bottom-0 z-50 flex w-full flex-col items-center bg-white py-4 md:py-6'>
+    <div className='sticky bottom-0 z-40 flex w-full flex-col items-center bg-white py-4 md:py-6'>
       <div className='absolute top-0 h-px w-full bg-mercury'>
         <div
           style={{

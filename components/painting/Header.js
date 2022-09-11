@@ -59,7 +59,11 @@ const Header = ({ painting }) => {
 
   return (
     <>
-      {modalActive && <Modal painting={painting} toggleModal={toggleModal} />}
+      <Modal
+        painting={painting}
+        modalActive={modalActive}
+        toggleModal={toggleModal}
+      />
       <header className='flex w-full flex-col items-center pt-6 md:mb-16 md:pt-10 xl:mb-0 xl:w-[59.38%] xl:pt-0'>
         <div className='flex w-[87.2%] flex-col md:w-[89.71%] md:flex-row xl:w-full'>
           <div
