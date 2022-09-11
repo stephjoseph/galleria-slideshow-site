@@ -44,7 +44,7 @@ const Nav = () => {
     if (showing && paintingIndex !== slugs.length - 1) {
       const timer = setTimeout(
         () => router.push(slugs[paintingIndex + 1]),
-        3000
+        30000
       );
       return () => clearTimeout(timer);
     }
