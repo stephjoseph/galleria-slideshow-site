@@ -1,14 +1,42 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
 
 const Main = ({ gallery }) => {
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    gsap.fromTo(
+      cardsRef.current,
+      {
+        y: 50,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: 'easeIn',
+        stagger: {
+          each: 0.3,
+        },
+      }
+    );
+  }, []);
+
   return (
     <main className='flex w-full flex-col items-center py-6 md:py-10'>
       <h1 className='pointer-events-none absolute opacity-0'>Galleria</h1>
       <div className='mosaic grid w-[87.2%] gap-6 md:w-[89.71%] md:gap-10 xl:w-[94.44%]'>
-        {gallery.map((painting) => (
+        {gallery.map((painting, i) => (
           <Link href={painting.slug} key={painting.slug}>
-            <a className='group relative w-full'>
+            <a
+              ref={(element) => {
+                cardsRef.current[i] = element;
+              }}
+              className='group relative w-full'
+            >
               <div className='object- relative h-full w-full group-hover:opacity-50'>
                 <img
                   className='h-full w-full'

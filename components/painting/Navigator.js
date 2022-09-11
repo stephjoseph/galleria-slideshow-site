@@ -1,10 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import gsap from 'gsap';
 
 const Navigator = ({ gallery, paintingIndex }) => {
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      titleRef.current,
+      { opacity: 0, x: -50 },
+      { x: 0, opacity: 1, duration: 1, ease: 'power1.out' }
+    );
+  }, [paintingIndex]);
+
   return (
-    <div className='relative flex w-full flex-col items-center py-4 md:py-6'>
+    <div className='sticky bottom-0 z-50 flex w-full flex-col items-center bg-white py-4 md:py-6'>
       <div className='absolute top-0 h-px w-full bg-mercury'>
         <div
           style={{
@@ -14,7 +25,7 @@ const Navigator = ({ gallery, paintingIndex }) => {
         ></div>
       </div>
       <div className='flex w-[87.2%] items-center justify-between md:w-[89.71%] xl:w-[94.44%]'>
-        <div className='flex flex-col gap-[0.563rem]'>
+        <div ref={titleRef} className='flex flex-col gap-[0.563rem]'>
           <div className='font-body leading-[1.063rem] md:text-[1.125rem] md:leading-[1.375rem]'>
             {gallery[paintingIndex].name}
           </div>
