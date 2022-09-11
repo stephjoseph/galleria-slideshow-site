@@ -7,22 +7,22 @@ const Main = ({ gallery }) => {
   const cardsRef = useRef([]);
 
   useEffect(() => {
-    gsap.fromTo(
-      cardsRef.current,
-      {
-        y: 50,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: 'easeIn',
-        stagger: {
-          each: 0.3,
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   cardsRef.current,
+    //   {
+    //     y: 50,
+    //     opacity: 0,
+    //   },
+    //   {
+    //     y: 0,
+    //     opacity: 1,
+    //     duration: 1,
+    //     ease: 'easeIn',
+    //     stagger: {
+    //       each: 0.3,
+    //     },
+    //   }
+    // );
   }, []);
 
   return (
