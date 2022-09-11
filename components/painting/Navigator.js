@@ -2,19 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-const Navigator = ({ gallery, painting }) => {
-  const [paintingIndex, setPaintingIndex] = useState(0);
-
-  const handlePaintingIndex = (painting) => {
-    gallery.forEach((item, index) => {
-      item.name === painting.name && setPaintingIndex(index);
-    });
-  };
-
-  useEffect(() => {
-    handlePaintingIndex(painting);
-  }, [painting]);
-
+const Navigator = ({ gallery, paintingIndex }) => {
   return (
     <div className='relative flex w-full flex-col items-center py-4 md:py-6'>
       <div className='absolute top-0 h-px w-full bg-mercury'>

@@ -1,3 +1,4 @@
+import { useEffect, useContext } from 'react';
 import path from 'path';
 import fs from 'fs/promises';
 import Head from 'next/head';
@@ -5,6 +6,7 @@ import Image from 'next/image';
 import Header from '../components/painting/Header';
 import Main from '../components/painting/Main';
 import Navigator from '../components/painting/Navigator';
+import { SlideshowContext } from '../context/SlideshowContext';
 
 export const getStaticPaths = async () => {
   const filePath = path.join(process.cwd(), 'public', 'data.json');
@@ -39,6 +41,19 @@ export const getStaticProps = async (context) => {
 };
 
 const Painting = ({ gallery, painting }) => {
+  const [showing, setShowing, paintingIndex, setPaintingIndex] =
+    useContext(SlideshowContext);
+
+  const handlePaintingIndex = (painting) => {
+    gallery.forEach((item, index) => {
+      item.name === painting.name && setPaintingIndex(index);
+    });
+  };
+
+  useEffect(() => {
+    handlePaintingIndex(painting);
+  }, [painting]);
+
   return (
     <>
       <Head>
@@ -48,7 +63,11 @@ const Painting = ({ gallery, painting }) => {
         <Header painting={painting} />
         <Main painting={painting} />
       </div>
-      <Navigator gallery={gallery} painting={painting} />
+      <Navigator
+        gallery={gallery}
+        painting={painting}
+        paintingIndex={paintingIndex}
+      />
     </>
   );
 };
