@@ -1,8 +1,10 @@
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { SlideshowContext } from '../../context/SlideshowContext';
 import Modal from './Modal';
 
 const Header = ({ painting }) => {
+  const [, setShowing] = useContext(SlideshowContext);
   const [modalActive, setModalActive] = useState(false);
 
   const toggleModal = () => {
@@ -10,9 +12,13 @@ const Header = ({ painting }) => {
   };
 
   useEffect(() => {
-    modalActive
-      ? (document.body.style.overflow = 'hidden')
-      : (document.body.style.overflow = 'visible');
+    if (modalActive) {
+      setShowing(false);
+      document.body.style.overflow = 'hidden';
+    } else {
+      setShowing(true);
+      document.body.style.overflow = 'visible';
+    }
   }, [modalActive]);
 
   return (
